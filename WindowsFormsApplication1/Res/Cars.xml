@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Cars>
+
+  <Car id ="1" manufacturer="Opel" model="Astra" year="1995">
+    <Parts>
+      <Part id="1" name="engine" price="400"></Part>
+      <Part id="2" name="wheel" price="30"></Part>
+      <Part id="3" name="turbine" price="100"></Part>
+    </Parts>
+  </Car>
+
+  <Car id ="2" manufacturer="Opel" model="Astra" year="2005">
+    <Parts>
+      <Part id="1" name="engine" price="600"></Part>
+      <Part id="2" name="wheel" price="35"></Part>
+      <Part id="3" name="turbine" price="150"></Part>
+    </Parts>
+  </Car>
+
+  <Car id ="3" manufacturer="Opel" model="Vectra" year="1998">
+    <Parts>
+      <Part id="1" name="engine" price="380"></Part>
+      <Part id="2" name="wheel" price="30"></Part>
+      <Part id="3" name="turbine" price="120"></Part>
+    </Parts>
+  </Car>
+
+  <Car id ="4" manufacturer="Toyota" model="Yaris" year="2002">
+    <Parts>
+      <Part id="1" name="engine" price="650"></Part>
+      <Part id="2" name="wheel" price="30"></Part>
+      <Part id="3" name="turbine" price="160"></Part>
+    </Parts>
+  </Car>
+
+  <Car id ="5" manufacturer="Toyota" model="Prius" year="2008">
+    <Parts>
+      <Part id="1" name="engine" price="900"></Part>
+      <Part id="2" name="wheel" price="60"></Part>
+      <Part id="3" name="turbine" price="200"></Part>
+      <Part id="4" name="main computer" price="1200"></Part>
+      <Part id="5" name="battery" price="600"></Part>
+    </Parts>
+  </Car>
+
+  <Car id ="6" manufacturer="Toyota" model="Prius" year="2014">
+    <Parts>
+      <Part id="1" name="engine" price="1200"></Part>
+      <Part id="2" name="wheel" price="60"></Part>
+      <Part id="3" name="turbine" price="280"></Part>
+      <Part id="4" name="main computer" price="1200"></Part>
+      <Part id="5" name="battery" price="600"></Part>
+    </Parts>
+  </Car>
+ 
+</Cars>

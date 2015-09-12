@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace CarShop.Properties {
+namespace Carshop.Properties {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace CarShop.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("CarShop.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Carshop.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -57,6 +57,55 @@ namespace CarShop.Properties {
             }
             set {
                 resourceCulture = value;
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+        ///&lt;Cars&gt;
+        ///
+        ///  &lt;Car id =&quot;1&quot; manufacturer=&quot;Opel&quot; model=&quot;Astra&quot; year=&quot;1995&quot;&gt;
+        ///    &lt;Parts&gt;
+        ///      &lt;Part id=&quot;1&quot; name=&quot;engine&quot; price=&quot;400&quot;&gt;&lt;/Part&gt;
+        ///      &lt;Part id=&quot;2&quot; name=&quot;wheel&quot; price=&quot;30&quot;&gt;&lt;/Part&gt;
+        ///      &lt;Part id=&quot;3&quot; name=&quot;turbine&quot; price=&quot;100&quot;&gt;&lt;/Part&gt;
+        ///    &lt;/Parts&gt;
+        ///  &lt;/Car&gt;
+        ///
+        ///  &lt;Car id =&quot;2&quot; manufacturer=&quot;Opel&quot; model=&quot;Astra&quot; year=&quot;2005&quot;&gt;
+        ///    &lt;Parts&gt;
+        ///      &lt;Part id=&quot;1&quot; name=&quot;engine&quot; price=&quot;600&quot;&gt;&lt;/Part&gt;
+        ///      &lt;Part id=&quot;2&quot; name=&quot;wheel&quot; price=&quot;35&quot;&gt;&lt;/Part&gt;
+        ///      &lt;Part id=&quot;3 [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string Cars {
+            get {
+                return ResourceManager.GetString("Cars", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+        ///&lt;Storehouse&gt;
+        ///
+        ///  &lt;Parts&gt;
+        ///    &lt;Part car=&quot;1&quot; part=&quot;1&quot;&gt;&lt;/Part&gt;
+        ///    &lt;Part car=&quot;2&quot; part=&quot;2&quot;&gt;&lt;/Part&gt;
+        ///    &lt;Part car=&quot;3&quot; part=&quot;3&quot;&gt;&lt;/Part&gt;
+        ///    &lt;Part car=&quot;4&quot; part=&quot;4&quot;&gt;&lt;/Part&gt;
+        ///    &lt;Part car=&quot;5&quot; part=&quot;5&quot;&gt;&lt;/Part&gt;
+        ///    &lt;Part car=&quot;6&quot; part=&quot;4&quot;&gt;&lt;/Part&gt;
+        ///    &lt;Part car=&quot;1&quot; part=&quot;3&quot;&gt;&lt;/Part&gt;
+        ///    &lt;Part car=&quot;2&quot; part=&quot;2&quot;&gt;&lt;/Part&gt;
+        ///    &lt;Part car=&quot;3&quot; part=&quot;1&quot;&gt;&lt;/Part&gt;
+        ///    &lt;Part car=&quot;4&quot; part=&quot;2&quot;&gt;&lt;/Part&gt;
+        ///    &lt;Part car=&quot;5&quot; part=&quot;3&quot;&gt;&lt;/Part&gt;
+        ///    &lt;Part car=&quot;6&quot; part=&quot;4&quot;&gt;&lt;/Part&gt;
+        ///    &lt;Part car [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string Storehouse {
+            get {
+                return ResourceManager.GetString("Storehouse", resourceCulture);
             }
         }
     }

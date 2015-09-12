@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Storehouse>
+
+  <Parts>
+    <Part car="1" part="1"></Part>
+    <Part car="2" part="2"></Part>
+    <Part car="3" part="3"></Part>
+    <Part car="4" part="3"></Part>
+    <Part car="5" part="5"></Part>
+    <Part car="6" part="4"></Part>
+    <Part car="1" part="3"></Part>
+    <Part car="2" part="2"></Part>
+    <Part car="3" part="1"></Part>
+    <Part car="4" part="2"></Part>
+    <Part car="5" part="3"></Part>
+    <Part car="6" part="4"></Part>
+    <Part car="1" part="2"></Part>
+    <Part car="2" part="1"></Part>
+    <Part car="3" part="3"></Part>
+    <Part car="4" part="2"></Part>
+    <Part car="5" part="5"></Part>
+    <Part car="6" part="1"></Part>
+    <Part car="1" part="1"></Part>
+    <Part car="2" part="3"></Part>
+    <Part car="3" part="2"></Part>
+    <Part car="4" part="1"></Part>
+  </Parts>
+  
+</Storehouse>

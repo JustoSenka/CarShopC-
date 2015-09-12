@@ -1,4 +1,4 @@
-﻿namespace CarShopNamespace
+﻿namespace Carshop.CarshopUI
 {
     partial class MainForm
     {

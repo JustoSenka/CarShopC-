@@ -7,14 +7,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Carshop.Carshop;
 
-namespace CarShopNamespace
+namespace Carshop.CarshopUI
 {
     public partial class MainForm : Form
     {
+
+        CarShop carShop = CarShopFactory.getCarShop();
+
         public MainForm()
         {
             InitializeComponent();
+            System.Console.WriteLine("Start");
         }
     }
 }
