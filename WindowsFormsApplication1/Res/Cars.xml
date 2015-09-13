@@ -3,54 +3,295 @@
 
   <Car id ="1" manufacturer="Opel" model="Astra" year="1995">
     <Parts>
-      <Part id="1" name="engine" price="400"></Part>
+      <Part id="1" name="engine" price="600"></Part>
       <Part id="2" name="wheel" price="30"></Part>
       <Part id="3" name="turbine" price="100"></Part>
+      <Part id="4" name="battery" price="80"></Part>
+      <Part id="5" name="exhaust" price="60"></Part>
+      <Part id="6" name="clutch" price="100"></Part>
+      <Part id="7" name="gearbox" price="120"></Part>
+      <Part id="8" name="radiator" price="40"></Part>
+      <Part id="9" name="oil filter" price="50"></Part>
+      <Part id="10" name="fuel filter" price="45"></Part>
+      <Part id="11" name="airbag" price="80"></Part>
+      <Part id="12" name="alternator" price="150"></Part>
+      <Part id="13" name="starter" price="200"></Part>
+      <Part id="14" name="brakes" price="110"></Part>
+      <Part id="15" name="fuel pump" price="90"></Part>
+      <Part id="16" name="suspension" price="400"></Part>
     </Parts>
   </Car>
 
-  <Car id ="2" manufacturer="Opel" model="Astra" year="2005">
+  <Car id ="2" manufacturer="Opel" model="Vectra" year="1995">
     <Parts>
       <Part id="1" name="engine" price="600"></Part>
-      <Part id="2" name="wheel" price="35"></Part>
-      <Part id="3" name="turbine" price="150"></Part>
-    </Parts>
-  </Car>
-
-  <Car id ="3" manufacturer="Opel" model="Vectra" year="1998">
-    <Parts>
-      <Part id="1" name="engine" price="380"></Part>
       <Part id="2" name="wheel" price="30"></Part>
-      <Part id="3" name="turbine" price="120"></Part>
+      <Part id="3" name="turbine" price="100"></Part>
+      <Part id="4" name="battery" price="80"></Part>
+      <Part id="5" name="exhaust" price="60"></Part>
+      <Part id="6" name="clutch" price="100"></Part>
+      <Part id="7" name="gearbox" price="120"></Part>
+      <Part id="8" name="radiator" price="40"></Part>
+      <Part id="9" name="oil filter" price="50"></Part>
+      <Part id="10" name="fuel filter" price="45"></Part>
+      <Part id="11" name="airbag" price="80"></Part>
+      <Part id="12" name="alternator" price="150"></Part>
+      <Part id="13" name="starter" price="200"></Part>
+      <Part id="14" name="brakes" price="110"></Part>
+      <Part id="15" name="fuel pump" price="90"></Part>
+      <Part id="16" name="suspension" price="400"></Part>
     </Parts>
   </Car>
 
-  <Car id ="4" manufacturer="Toyota" model="Yaris" year="2002">
+  <Car id ="3" manufacturer="Opel" model="Astra" year="2002">
     <Parts>
-      <Part id="1" name="engine" price="650"></Part>
+      <Part id="1" name="engine" price="600"></Part>
       <Part id="2" name="wheel" price="30"></Part>
-      <Part id="3" name="turbine" price="160"></Part>
+      <Part id="3" name="turbine" price="100"></Part>
+      <Part id="4" name="battery" price="80"></Part>
+      <Part id="5" name="exhaust" price="60"></Part>
+      <Part id="6" name="clutch" price="100"></Part>
+      <Part id="7" name="gearbox" price="120"></Part>
+      <Part id="8" name="radiator" price="40"></Part>
+      <Part id="9" name="oil filter" price="50"></Part>
+      <Part id="10" name="fuel filter" price="45"></Part>
+      <Part id="11" name="airbag" price="80"></Part>
+      <Part id="12" name="alternator" price="150"></Part>
+      <Part id="13" name="starter" price="200"></Part>
+      <Part id="14" name="brakes" price="110"></Part>
+      <Part id="15" name="fuel pump" price="90"></Part>
+      <Part id="16" name="suspension" price="400"></Part>
     </Parts>
   </Car>
 
-  <Car id ="5" manufacturer="Toyota" model="Prius" year="2008">
+  <Car id ="4" manufacturer="Opel" model="Vectra" year="2002">
     <Parts>
-      <Part id="1" name="engine" price="900"></Part>
-      <Part id="2" name="wheel" price="60"></Part>
-      <Part id="3" name="turbine" price="200"></Part>
-      <Part id="4" name="main computer" price="1200"></Part>
-      <Part id="5" name="battery" price="600"></Part>
+      <Part id="1" name="engine" price="600"></Part>
+      <Part id="2" name="wheel" price="30"></Part>
+      <Part id="3" name="turbine" price="100"></Part>
+      <Part id="4" name="battery" price="80"></Part>
+      <Part id="5" name="exhaust" price="60"></Part>
+      <Part id="6" name="clutch" price="100"></Part>
+      <Part id="7" name="gearbox" price="120"></Part>
+      <Part id="8" name="radiator" price="40"></Part>
+      <Part id="9" name="oil filter" price="50"></Part>
+      <Part id="10" name="fuel filter" price="45"></Part>
+      <Part id="11" name="airbag" price="80"></Part>
+      <Part id="12" name="alternator" price="150"></Part>
+      <Part id="13" name="starter" price="200"></Part>
+      <Part id="14" name="brakes" price="110"></Part>
+      <Part id="15" name="fuel pump" price="90"></Part>
+      <Part id="16" name="suspension" price="400"></Part>
     </Parts>
   </Car>
 
-  <Car id ="6" manufacturer="Toyota" model="Prius" year="2014">
+  <Car id ="5" manufacturer="Volkswagen" model="Golf" year="1995">
     <Parts>
-      <Part id="1" name="engine" price="1200"></Part>
-      <Part id="2" name="wheel" price="60"></Part>
-      <Part id="3" name="turbine" price="280"></Part>
-      <Part id="4" name="main computer" price="1200"></Part>
-      <Part id="5" name="battery" price="600"></Part>
+      <Part id="1" name="engine" price="600"></Part>
+      <Part id="2" name="wheel" price="30"></Part>
+      <Part id="3" name="turbine" price="100"></Part>
+      <Part id="4" name="battery" price="80"></Part>
+      <Part id="5" name="exhaust" price="60"></Part>
+      <Part id="6" name="clutch" price="100"></Part>
+      <Part id="7" name="gearbox" price="120"></Part>
+      <Part id="8" name="radiator" price="40"></Part>
+      <Part id="9" name="oil filter" price="50"></Part>
+      <Part id="10" name="fuel filter" price="45"></Part>
+      <Part id="11" name="airbag" price="80"></Part>
+      <Part id="12" name="alternator" price="150"></Part>
+      <Part id="13" name="starter" price="200"></Part>
+      <Part id="14" name="brakes" price="110"></Part>
+      <Part id="15" name="fuel pump" price="90"></Part>
+      <Part id="16" name="suspension" price="400"></Part>
     </Parts>
   </Car>
- 
+
+  <Car id ="6" manufacturer="Volkswagen" model="Passat" year="1995">
+    <Parts>
+      <Part id="1" name="engine" price="600"></Part>
+      <Part id="2" name="wheel" price="30"></Part>
+      <Part id="3" name="turbine" price="100"></Part>
+      <Part id="4" name="battery" price="80"></Part>
+      <Part id="5" name="exhaust" price="60"></Part>
+      <Part id="6" name="clutch" price="100"></Part>
+      <Part id="7" name="gearbox" price="120"></Part>
+      <Part id="8" name="radiator" price="40"></Part>
+      <Part id="9" name="oil filter" price="50"></Part>
+      <Part id="10" name="fuel filter" price="45"></Part>
+      <Part id="11" name="airbag" price="80"></Part>
+      <Part id="12" name="alternator" price="150"></Part>
+      <Part id="13" name="starter" price="200"></Part>
+      <Part id="14" name="brakes" price="110"></Part>
+      <Part id="15" name="fuel pump" price="90"></Part>
+      <Part id="16" name="suspension" price="400"></Part>
+    </Parts>
+  </Car>
+
+  <Car id ="7" manufacturer="Volkswagen" model="Polo" year="1995">
+    <Parts>
+      <Part id="1" name="engine" price="600"></Part>
+      <Part id="2" name="wheel" price="30"></Part>
+      <Part id="3" name="turbine" price="100"></Part>
+      <Part id="4" name="battery" price="80"></Part>
+      <Part id="5" name="exhaust" price="60"></Part>
+      <Part id="6" name="clutch" price="100"></Part>
+      <Part id="7" name="gearbox" price="120"></Part>
+      <Part id="8" name="radiator" price="40"></Part>
+      <Part id="9" name="oil filter" price="50"></Part>
+      <Part id="10" name="fuel filter" price="45"></Part>
+      <Part id="11" name="airbag" price="80"></Part>
+      <Part id="12" name="alternator" price="150"></Part>
+      <Part id="13" name="starter" price="200"></Part>
+      <Part id="14" name="brakes" price="110"></Part>
+      <Part id="15" name="fuel pump" price="90"></Part>
+      <Part id="16" name="suspension" price="400"></Part>
+    </Parts>
+  </Car>
+
+  <Car id ="8" manufacturer="Volkswagen" model="Beetle" year="1995">
+    <Parts>
+      <Part id="1" name="engine" price="600"></Part>
+      <Part id="2" name="wheel" price="30"></Part>
+      <Part id="3" name="turbine" price="100"></Part>
+      <Part id="4" name="battery" price="80"></Part>
+      <Part id="5" name="exhaust" price="60"></Part>
+      <Part id="6" name="clutch" price="100"></Part>
+      <Part id="7" name="gearbox" price="120"></Part>
+      <Part id="8" name="radiator" price="40"></Part>
+      <Part id="9" name="oil filter" price="50"></Part>
+      <Part id="10" name="fuel filter" price="45"></Part>
+      <Part id="11" name="airbag" price="80"></Part>
+      <Part id="12" name="alternator" price="150"></Part>
+      <Part id="13" name="starter" price="200"></Part>
+      <Part id="14" name="brakes" price="110"></Part>
+      <Part id="15" name="fuel pump" price="90"></Part>
+      <Part id="16" name="suspension" price="400"></Part>
+    </Parts>
+  </Car>
+
+  <Car id ="9" manufacturer="Volkswagen" model="Golf" year="2002">
+    <Parts>
+      <Part id="1" name="engine" price="600"></Part>
+      <Part id="2" name="wheel" price="30"></Part>
+      <Part id="3" name="turbine" price="100"></Part>
+      <Part id="4" name="battery" price="80"></Part>
+      <Part id="5" name="exhaust" price="60"></Part>
+      <Part id="6" name="clutch" price="100"></Part>
+      <Part id="7" name="gearbox" price="120"></Part>
+      <Part id="8" name="radiator" price="40"></Part>
+      <Part id="9" name="oil filter" price="50"></Part>
+      <Part id="10" name="fuel filter" price="45"></Part>
+      <Part id="11" name="airbag" price="80"></Part>
+      <Part id="12" name="alternator" price="150"></Part>
+      <Part id="13" name="starter" price="200"></Part>
+      <Part id="14" name="brakes" price="110"></Part>
+      <Part id="15" name="fuel pump" price="90"></Part>
+      <Part id="16" name="suspension" price="400"></Part>
+    </Parts>
+  </Car>
+
+  <Car id ="10" manufacturer="Volkswagen" model="Passat" year="2002">
+    <Parts>
+      <Part id="1" name="engine" price="600"></Part>
+      <Part id="2" name="wheel" price="30"></Part>
+      <Part id="3" name="turbine" price="100"></Part>
+      <Part id="4" name="battery" price="80"></Part>
+      <Part id="5" name="exhaust" price="60"></Part>
+      <Part id="6" name="clutch" price="100"></Part>
+      <Part id="7" name="gearbox" price="120"></Part>
+      <Part id="8" name="radiator" price="40"></Part>
+      <Part id="9" name="oil filter" price="50"></Part>
+      <Part id="10" name="fuel filter" price="45"></Part>
+      <Part id="11" name="airbag" price="80"></Part>
+      <Part id="12" name="alternator" price="150"></Part>
+      <Part id="13" name="starter" price="200"></Part>
+      <Part id="14" name="brakes" price="110"></Part>
+      <Part id="15" name="fuel pump" price="90"></Part>
+      <Part id="16" name="suspension" price="400"></Part>
+    </Parts>
+  </Car>
+
+  <Car id ="11" manufacturer="Volkswagen" model="Polo" year="2002">
+    <Parts>
+      <Part id="1" name="engine" price="600"></Part>
+      <Part id="2" name="wheel" price="30"></Part>
+      <Part id="3" name="turbine" price="100"></Part>
+      <Part id="4" name="battery" price="80"></Part>
+      <Part id="5" name="exhaust" price="60"></Part>
+      <Part id="6" name="clutch" price="100"></Part>
+      <Part id="7" name="gearbox" price="120"></Part>
+      <Part id="8" name="radiator" price="40"></Part>
+      <Part id="9" name="oil filter" price="50"></Part>
+      <Part id="10" name="fuel filter" price="45"></Part>
+      <Part id="11" name="airbag" price="80"></Part>
+      <Part id="12" name="alternator" price="150"></Part>
+      <Part id="13" name="starter" price="200"></Part>
+      <Part id="14" name="brakes" price="110"></Part>
+      <Part id="15" name="fuel pump" price="90"></Part>
+      <Part id="16" name="suspension" price="400"></Part>
+    </Parts>
+  </Car>
+
+  <Car id ="12" manufacturer="Volkswagen" model="Beetle" year="2002">
+    <Parts>
+      <Part id="1" name="engine" price="600"></Part>
+      <Part id="2" name="wheel" price="30"></Part>
+      <Part id="3" name="turbine" price="100"></Part>
+      <Part id="4" name="battery" price="80"></Part>
+      <Part id="5" name="exhaust" price="60"></Part>
+      <Part id="6" name="clutch" price="100"></Part>
+      <Part id="7" name="gearbox" price="120"></Part>
+      <Part id="8" name="radiator" price="40"></Part>
+      <Part id="9" name="oil filter" price="50"></Part>
+      <Part id="10" name="fuel filter" price="45"></Part>
+      <Part id="11" name="airbag" price="80"></Part>
+      <Part id="12" name="alternator" price="150"></Part>
+      <Part id="13" name="starter" price="200"></Part>
+      <Part id="14" name="brakes" price="110"></Part>
+      <Part id="15" name="fuel pump" price="90"></Part>
+      <Part id="16" name="suspension" price="400"></Part>
+    </Parts>
+  </Car>
+
+  <Car id ="13" manufacturer="Audi" model="80" year="1988">
+    <Parts>
+      <Part id="1" name="engine" price="200"></Part>
+      <Part id="2" name="wheel" price="30"></Part>
+      <Part id="3" name="turbine" price="80"></Part>
+      <Part id="4" name="battery" price="50"></Part>
+      <Part id="5" name="exhaust" price="20"></Part>
+      <Part id="6" name="clutch" price="50"></Part>
+      <Part id="7" name="gearbox" price="60"></Part>
+      <Part id="8" name="radiator" price="30"></Part>
+      <Part id="9" name="oil filter" price="20"></Part>
+      <Part id="10" name="fuel filter" price="20"></Part>
+      <Part id="11" name="airbag" price="45"></Part>
+      <Part id="12" name="alternator" price="105"></Part>
+      <Part id="13" name="starter" price="125"></Part>
+      <Part id="14" name="brakes" price="65"></Part>
+      <Part id="15" name="fuel pump" price="45"></Part>
+      <Part id="16" name="suspension" price="250"></Part>
+    </Parts>
+  </Car>
+
+  <Car id ="14" manufacturer="Audi" model="100" year="1992">
+    <Parts>
+      <Part id="1" name="engine" price="200"></Part>
+      <Part id="2" name="wheel" price="30"></Part>
+      <Part id="3" name="turbine" price="80"></Part>
+      <Part id="4" name="battery" price="50"></Part>
+      <Part id="5" name="exhaust" price="20"></Part>
+      <Part id="6" name="clutch" price="50"></Part>
+      <Part id="7" name="gearbox" price="60"></Part>
+      <Part id="8" name="radiator" price="30"></Part>
+      <Part id="9" name="oil filter" price="20"></Part>
+      <Part id="10" name="fuel filter" price="20"></Part>
+      <Part id="11" name="airbag" price="45"></Part>
+      <Part id="12" name="alternator" price="105"></Part>
+      <Part id="13" name="starter" price="125"></Part>
+      <Part id="14" name="brakes" price="65"></Part>
+      <Part id="15" name="fuel pump" price="45"></Part>
+      <Part id="16" name="suspension" price="250"></Part>
+    </Parts>
+  </Car>
 </Cars>

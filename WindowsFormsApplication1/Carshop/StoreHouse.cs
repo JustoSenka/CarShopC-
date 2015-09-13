@@ -16,16 +16,16 @@ namespace Carshop.Carshop
             this.parts = parts;
         }
 
-        public IEnumerable<Car.Part> getAllParts()
+        public IList<Car.Part> GetAllParts()
         {
-            return parts.AsEnumerable();
+            return parts;
         }
 
-        public IEnumerable<Car.Part> getFilteredParts(string regex)
+        public IList<Car.Part> GetFilteredParts(string regex)
         {
             if (regex.Equals(""))
             {
-                return this.getAllParts();
+                return this.GetAllParts();
             }
 
             ISet<Car.Part> filteredParts = new HashSet<Car.Part>();
@@ -34,7 +34,7 @@ namespace Carshop.Carshop
                 bool add = true;
                 foreach (string word in regex.Split(new char[]{' '}))
                 {
-                    if (!p.getNameForRegexSearch().ToLower().Contains(word.ToLower()))
+                    if (!p.GetNameForRegexSearch().ToLower().Contains(word.ToLower()))
                     {
                         add = false;
                     }
@@ -42,7 +42,17 @@ namespace Carshop.Carshop
                 if (add) filteredParts.Add(p);
             }
 
-            return filteredParts.AsEnumerable();
+            return filteredParts.ToList();
+        }
+
+        public void RemovePart(Car.Part part)
+        {
+            parts.Remove(part);
+        }
+
+        public void AddPart(Car.Part part)
+        {
+            parts.Add(part);
         }
     }
 }

@@ -73,9 +73,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Carshop\CarShop.cs" />
+    <Compile Include="Carshop\ICarShop.cs" />
     <Compile Include="Carshop\CarShopFactory.cs" />
-    <Compile Include="Carshop\CarShopImpl.cs" />
+    <Compile Include="Carshop\CarShop.cs" />
     <Compile Include="CarshopUI\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -85,6 +85,7 @@
     <Compile Include="CarshopUI\Program.cs" />
     <Compile Include="Carshop\Car.cs" />
     <Compile Include="Carshop\Owner.cs" />
+    <Compile Include="Carshop\ShoppingCart.cs" />
     <Compile Include="Carshop\XmlReader.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Carshop\Storehouse.cs" />

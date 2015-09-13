@@ -11,12 +11,12 @@ namespace Carshop.Carshop
 {
     public class CarShopFactory
     {
-        public static CarShop getCarShop()
+        public static ICarShop GetCarShop()
         {
             IList<Car> cars = XmlReader.GetAllCars(Properties.Resources.Cars);
             IList<Car.Part> parts = XmlReader.GetStorehouseParts(Properties.Resources.Storehouse, cars);
 
-            return new CarShopImpl(cars, new Storehouse(parts));
+            return new CarShop(cars, new Storehouse(parts));
         }
     }
 }

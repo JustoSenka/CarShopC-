@@ -48,7 +48,7 @@ namespace Carshop.Carshop
             return str;
         }
 
-        public class Part
+        public class Part : IEquatable<Car.Part>
         {
             public int id { get; private set; }
             public string name { get; private set; }
@@ -73,15 +73,28 @@ namespace Carshop.Carshop
                 return "Part: id=" + this.id + ", name=" + this.name + ", price=" + this.price + ", originalCarId=" + originalCar.id;
             }
 
-            public string getNameForRegexSearch()
+            public string GetNameForRegexSearch()
             {
                 return this.name + " " + this.originalCar.manufacturer + " " + this.originalCar.model + " " + this.originalCar.year;
             }
 
-            public string getFullName()
+            public string GetFullName()
             {
                 return this.originalCar.manufacturer + " " + this.originalCar.model + " " + 
                        this.originalCar.year + " " + this.name + " - " + this.price + "$";
+            }
+
+            public bool Equals(Car.Part part)
+            {
+                if (this.name == part.name &&
+                    this.price == part.price &&
+                    this.originalCar == part.originalCar &&
+                    this.id == part.id)
+                {
+                    return true;
+                }
+                else
+                    return false;
             }
         }
     }
