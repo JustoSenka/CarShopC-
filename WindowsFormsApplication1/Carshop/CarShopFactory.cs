@@ -9,12 +9,13 @@ using System.Reflection;
 
 namespace Carshop.Carshop
 {
-    public class CarShopFactory
+    public static class CarShopFactory
     {
-        public static ICarShop GetCarShop()
+        public static ICarShop GetCarShop(string Cars, string Storehouse)
         {
-            IList<Car> cars = XmlReader.GetAllCars(Properties.Resources.Cars);
-            IList<Car.Part> parts = XmlReader.GetStorehouseParts(Properties.Resources.Storehouse, cars);
+
+            IList<Car> cars = XmlReader.GetAllCars(Cars);
+            IList<Car.Part> parts = XmlReader.GetStorehouseParts(Storehouse, cars);
 
             return new CarShop(cars, new Storehouse(parts));
         }

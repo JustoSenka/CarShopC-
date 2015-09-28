@@ -12,6 +12,8 @@ namespace Carshop.Carshop
         public static IList<Car> GetAllCars(string xmlResource)
         {
             XElement xml = XElement.Parse(xmlResource);
+            
+
             IList<Car> cars =
             (
                 from e in xml.Elements("Car")
@@ -33,6 +35,8 @@ namespace Carshop.Carshop
                             (int)Int32.Parse(p.Attribute("price").Value)
                         )
                     ).ToList()
+
+                   
                 }
              ).ToList();
 
@@ -47,7 +51,8 @@ namespace Carshop.Carshop
                 from e in xml.Elements("Parts").Elements("Part")
                 select new Car.Part
                 (
-                    cars.ElementAt(Int32.Parse(e.Attribute("car").Value) - 1).Parts.ElementAt(Int32.Parse(e.Attribute("part").Value) - 1)
+                    cars.ElementAt(Int32.Parse(e.Attribute("car").Value) - 1).
+                        Parts.ElementAt(Int32.Parse(e.Attribute("part").Value) - 1)
                 )
              ).ToList();
 

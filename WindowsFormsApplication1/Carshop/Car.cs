@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Carshop.Carshop
 {
-    public class Car
+    public class Car : IComparable<Car>
     {
-        #warning Accessability issue on parts : public for linq.
+        //#warning Accessability issue on parts : public for linq.
         private IList<Part> parts;
         public IList<Part> Parts
         {
@@ -48,13 +48,21 @@ namespace Carshop.Carshop
             return str;
         }
 
+        public int CompareTo(Car other)
+        {
+            int a;
+            if ((a = this.manufacturer.CompareTo(other.manufacturer)) != 0) return a;
+            else if ((a = this.model.CompareTo(other.model)) != 0) return a;
+            else return this.year.CompareTo(other.year);
+        }
+
         public class Part : IEquatable<Car.Part>
         {
             public int id { get; private set; }
             public string name { get; private set; }
             public int price { get; private set; }
            
-            #warning Accessability issue on originalCar : setter is public.
+            //#warning Accessability issue on originalCar : setter is public.
             public Car originalCar { get; set; }
 
             public Part(Part part) : this(part.id, part.name, part.price) 
@@ -70,18 +78,8 @@ namespace Carshop.Carshop
 
             public override string ToString()
             {
-                return "Part: id=" + this.id + ", name=" + this.name + ", price=" + this.price + ", originalCarId=" + originalCar.id;
-            }
-
-            public string GetNameForRegexSearch()
-            {
-                return this.name + " " + this.originalCar.manufacturer + " " + this.originalCar.model + " " + this.originalCar.year;
-            }
-
-            public string GetFullName()
-            {
-                return this.originalCar.manufacturer + " " + this.originalCar.model + " " + 
-                       this.originalCar.year + " " + this.name + " - " + this.price + "$";
+                return "Part: id=" + this.id + ", name=" + this.name + ", price=" + 
+                       this.price + ", originalCarId=" + originalCar.id;
             }
 
             public bool Equals(Car.Part part)
@@ -95,6 +93,12 @@ namespace Carshop.Carshop
                 }
                 else
                     return false;
+            }
+
+            public struct NameAndPrice
+            {
+                public string Name { get; set; }
+                public string Price { get; set; }
             }
         }
     }

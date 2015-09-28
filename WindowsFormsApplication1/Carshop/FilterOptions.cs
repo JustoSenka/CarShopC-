@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace Carshop.Carshop
 {
-    public class Owner
+    [Flags]
+    public enum FilterOptions
     {
-        public Owner()
-        {
-
-        }
+        None = 0,
+        HideYear = 1,
+        HideModel = 2
     }
 }

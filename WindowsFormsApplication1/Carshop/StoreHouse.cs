@@ -16,30 +16,25 @@ namespace Carshop.Carshop
             this.parts = parts;
         }
 
-        public IList<Car.Part> GetAllParts()
-        {
-            return parts;
-        }
-
-        public IList<Car.Part> GetFilteredParts(string regex)
+        public IList<Car.Part> GetFilteredParts(string regex = "")
         {
             if (regex.Equals(""))
             {
-                return this.GetAllParts();
+                return this.parts;
             }
 
             ISet<Car.Part> filteredParts = new HashSet<Car.Part>();
-            foreach (Car.Part p in parts)
+            foreach (Car.Part part in parts)
             {
                 bool add = true;
                 foreach (string word in regex.Split(new char[]{' '}))
                 {
-                    if (!p.GetNameForRegexSearch().ToLower().Contains(word.ToLower()))
+                    if (!part.GetNameForRegexSearch().ToLower().Contains(word.ToLower()))
                     {
                         add = false;
                     }
                 }
-                if (add) filteredParts.Add(p);
+                if (add) filteredParts.Add(part);
             }
 
             return filteredParts.ToList();

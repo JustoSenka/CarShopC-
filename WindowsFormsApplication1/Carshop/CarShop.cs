@@ -20,34 +20,34 @@ namespace Carshop.Carshop
             this.shoppingCart = new ShoppingCart();
         }
 
-        public IList<Object> GetFilteredParts(string regex)
+        public IEnumerable<Object> GetFilteredParts(string regex = "", FilterOptions filterOptions = FilterOptions.None)
         {
             IList<Object> list = new List<Object>();
             foreach (Car.Part p in storehouse.GetFilteredParts(regex))
             {
-                list.Add(p.GetFullName());
+                list.Add(p.GetFullName(filterOptions));
             }
-            return list.AsEnumerable().Distinct().ToList(); // No duplicates
+            return list.AsEnumerable().Distinct(); // No duplicates
         }
 
-        public IList<Object> GetShopCartList()
+        public IEnumerable<Object> GetShopCartList()
         {
             IList<Object> list = new List<Object>();
-            foreach (Car.Part p in shoppingCart.GetAllParts())
+            foreach (Car.Part p in shoppingCart)
             {
                 list.Add(p.GetFullName());
             }
-            return list;
+            return list.AsEnumerable();
         }
 
         public void AddToShoppingCart(Object part)
         {
-            foreach (Car.Part p in storehouse.GetAllParts())
+            foreach (Car.Part p in storehouse.GetFilteredParts())
             {
                 if (p.GetFullName().Equals(part))
                 {
-                    storehouse.RemovePart(p);
-                    shoppingCart.AddPart(p);
+                    storehouse.RemovePart(part: p);
+                    shoppingCart.AddPart(part: p);
                     return;
                 }
             }
@@ -55,13 +55,16 @@ namespace Carshop.Carshop
 
         public void RemoveFromShoppingCart(Object part)
         {
-            foreach (Car.Part p in shoppingCart.GetAllParts())
+            using (IEnumerator<Car.Part> e = shoppingCart.GetEnumerator())
             {
-                if (p.GetFullName().Equals(part))
+                while (e.MoveNext())
                 {
-                    storehouse.AddPart(p);
-                    shoppingCart.RemovePart(p);
-                    return;
+                    if (e.Current.GetFullName().Equals(part))
+                    {
+                        storehouse.AddPart(e.Current);
+                        shoppingCart.RemovePart(e.Current);
+                        return;
+                    }
                 }
             }
         }
@@ -69,6 +72,12 @@ namespace Carshop.Carshop
         public int GetTotalCost()
         {
             return shoppingCart.GetTotalCost();
+        }
+
+        public void SellCart()
+        {
+            IList<string> receipt = shoppingCart.SellCartAndGetReceipt();
+            Logger.LogToFile("Log.txt", receipt);
         }
     }
 }

@@ -6,18 +6,13 @@ using System.Threading.Tasks;
 
 namespace Carshop.Carshop
 {
-    public class ShoppingCart
+    public class ShoppingCart : IEnumerable<Car.Part>
     {
         private IList<Car.Part> parts;
 
         public ShoppingCart()
         {
             parts = new List<Car.Part>();
-        }
-
-        public IList<Car.Part> GetAllParts()
-        {
-            return parts;
         }
 
         public void AddPart(Car.Part part)
@@ -40,6 +35,41 @@ namespace Carshop.Carshop
             }
 
             return totalCost;
+        }
+
+        public IList<string> SellCartAndGetReceipt()
+        {
+            IList<string> receipt = new List<string>();
+
+            receipt.Add("Log date: " + DateTime.Now.ToString());
+            receipt.AddSeparator();
+
+            foreach (Car.Part part in parts)
+            {
+                receipt.AddAligned(part.GetNameAndPrice().Name, part.GetNameAndPrice().Price);
+            }
+
+            receipt.With(x =>
+            {
+                x.AddSeparator();
+                x.AddAligned("Total cost: ", this.GetTotalCost());
+                x.AddSeparator();
+                x.Add("");
+            });
+
+            parts.Clear();
+
+            return receipt;
+        }
+
+        public IEnumerator<Car.Part> GetEnumerator()
+        {
+            return parts.GetEnumerator();
+        }
+
+        System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator()
+        {
+            return this.GetEnumerator();
         }
     }
 }
