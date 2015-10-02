@@ -64,7 +64,14 @@ namespace Carshop.Carshop
 
         public IEnumerator<Car.Part> GetEnumerator()
         {
-            return parts.GetEnumerator();
+            foreach (var t in parts)
+            {
+                if (t == null)
+                {
+                    break;
+                }
+                yield return t;
+            }
         }
 
         System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator()
